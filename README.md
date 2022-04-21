@@ -31,7 +31,7 @@ var xml = xmlread.New()
 ```
 ``` golang
 func main() {
-    var r = xml.Load(b)
+    var r = xml.Load([]byte(str))
     //循环读取
     for {
         read := r.Read()
